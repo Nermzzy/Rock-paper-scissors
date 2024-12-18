@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+  </head>
+  <body>
+    <p>Rock-Paper-Scissors</p>
+
+    <button
+      onclick="
+    const randomNumber = Math.random();
+
+    let computerMove = '';
+    
+    if (randomNumber >= 0 && randomNumber <1/3){
+        computerMove ='Rock';
+    } else if (randomNumber >= 1/3 && randomNumber < 2/3){
+        computerMove ='Paper';
+    } else if (randomNumber >= 2/3 && randomNumber < 1){
+        computerMove ='scissors'
+    };
+    console.log(computerMove)
+
+
+    let result ='';
+    if (computerMove === 'Rock'){
+        result = 'Tie';
+    } else if (computerMove === 'Paper'){
+        result = 'lose';
+    } else if (computerMove === 'scissors'){
+        result = 'win';
+    };
+
+    alert(`You select Rock. computer picked ${computerMove}. You ${result}`)
+    ">
+      Rock
+    </button>
+
+
+
+    
+    <button  onclick="
+    const paper = Math.random();
+
+    let paperMove = '';
+    
+    if (paper >= 0 && paper <1/3){
+        paperMove ='Rock';
+    } else if (paper >= 1/3 && paper < 2/3){
+        paperMove ='Paper';
+    } else if (paper >= 2/3 && paper < 1){
+        paperMove ='scissors'
+    };
+    console.log(paperMove)
+
+
+    let paperResult ='';
+    if (paperMove === 'Rock'){
+        paperResult = 'Win';
+    } else if (paperMove === 'Paper'){
+        paperResult = 'Tie';
+    } else if (paperMove === 'scissors'){
+        paperResult = 'lose';
+    };
+
+    alert(`You select Paper. computer picked ${paperMove}. You ${paperResult}`)
+    ">Paper</button>
+
+
+
+
+    <button  onclick="
+    const scissors = Math.random();
+
+    let scissorsMove = '';
+    
+    if (scissors >= 0 && scissors <1/3){
+        scissorsMove ='Rock';
+    } else if (scissors >= 1/3 && scissors < 2/3){
+        scissorsMove ='Paper';
+    } else if (scissors >= 2/3 && scissors < 1){
+        scissorsMove ='scissors'
+    };
+    console.log(scissorsMove)
+
+
+    let scissorsResult ='';
+    if (scissorsMove === 'Rock'){
+        scissorsResult = 'lose';
+    } else if (scissorsMove === 'Paper'){
+        scissorsResult = 'Win';
+    } else if (scissorsMove === 'scissors'){
+        scissorsResult = 'Tie';
+    };
+
+    alert(`You select scissors. computer picked ${scissorsMove}. You ${scissorsResult}`)
+    ">scissors</button>
+
+    <script src="paper.js"></script>
+  </body>
+</html>
